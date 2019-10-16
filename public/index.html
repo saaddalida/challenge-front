@@ -4,9 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap"
+      rel="stylesheet"
+    />
     <title>Hash challenge</title>
   </head>
   <body>
+    <div class="container">
+      <div class="content-input">
+        <h1>Simule sua Antecipação</h1>
+        <div class="content-form">
+          <div class="input-item">
+            <label for="sale-value">Informe o valor da venda *</label>
+            <input type="number" name="sale-value" id="sale-value" />
+          </div>
+          <div class="input-item">
+            <label for="sale-installments">Em quantas parcelas *</label>
+            <input
+              type="number"
+              name="sale-installments"
+              id="sale-installments"
+            />
+            <span>Máximo de 12 parcelas</span>
+          </div>
+          <div class="input-item">
+            <label for="sale-mdr">Informe o percentual de MDR *</label>
+            <input type="number" name="sale-mdr" id="sale-mdr" />
+          </div>
+        </div>
+      </div>
+      <div class="content-output">
+        <h2>Você receberá:</h2>
+
+        <hr />
+
+        <ul>
+          <li>
+            <span>Amanhã:</span>
+            <strong>R$ 0,00</strong>
+          </li>
+          <li>
+            <span>Em 15 dias:</span>
+            <strong>R$ 0,00</strong>
+          </li>
+          <li>
+            <span>Em 30 dias:</span>
+            <strong>R$ 0,00</strong>
+          </li>
+          <li>
+            <span>Em 90 dias:</span>
+            <strong>R$ 0,00</strong>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <script src="./bundle.js"></script>
   </body>
 </html>

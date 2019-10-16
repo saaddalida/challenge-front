@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 0;
+}
+
+body {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Source Sans Pro', sans-serif;
+  background: #f5f7fa;
+}
+
+body,
+input,
+button {
+  font: 14px 'Source Sans Pro', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  margin: 150px auto;
+  border: 1px solid #d1dce3;
+  border-radius: 4px;
+  max-width: 600px;
+
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.content-input {
+  width: 380px;
+  height: 400px;
+  background: #ffffff;
+  padding: 40px 70px 40px 50px;
+}
+
+.content-input h1 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #656565;
+}
+
+.input-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-item label {
+  color: #656565;
+  line-height: 18px;
+  padding: 22px 0 6px;
+}
+
+.input-item input {
+  width: 250px;
+  height: 40px;
+  border: 1px solid #dde6e9;
+  border-radius: 4px;
+  padding-left: 14px;
+
+  color: #000;
+  font-size: 14px;
+  line-height: 18px;
+  padding-top: 6px;
+}
+
+.input-item input:focus {
+  border: 1px solid #66afe9;
+  border-radius: 4px;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.input-item span {
+  font-weight: bold;
+  font-size: 11px;
+  color: #cecece;
+
+  padding-top: 3px;
+}
+
+.content-output {
+  width: 230px;
+  height: 400px;
+  background: rgba(209, 220, 227, 0.18);
+  border-radius: 4px;
+  padding: 80px 30px;
+}
+
+.content-output h2 {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #3d75bb;
+
+  padding: 4px 0 13px;
+}
+
+.content-output hr {
+  opacity: 0.3;
+  border: 1px solid #5d9cec;
+}
+
+.content-output li {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 46px;
+
+  color: #5d9cec;
+}
