@@ -8,16 +8,18 @@
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>Hash challenge</title>
   </head>
   <body>
     <div class="container">
       <div class="content-input">
         <h1>Simule sua Antecipação</h1>
-        <div class="content-form">
+        <div class="input-form">
           <div class="input-item">
-            <label for="sale-value">Informe o valor da venda *</label>
-            <input type="number" name="sale-value" id="sale-value" />
+            <label for="sale-amount">Informe o valor da venda *</label>
+            <input type="number" name="sale-amount" id="sale-amount" />
           </div>
           <div class="input-item">
             <label for="sale-installments">Em quantas parcelas *</label>
@@ -42,19 +44,19 @@
         <ul>
           <li>
             <span>Amanhã:</span>
-            <strong>R$ 0,00</strong>
+            <strong id="tomorrow-value">R$ 0,00</strong>
           </li>
           <li>
             <span>Em 15 dias:</span>
-            <strong>R$ 0,00</strong>
+            <strong id="fifteenth-value">R$ 0,00</strong>
           </li>
           <li>
             <span>Em 30 dias:</span>
-            <strong>R$ 0,00</strong>
+            <strong id="thirtieth-value">R$ 0,00</strong>
           </li>
           <li>
             <span>Em 90 dias:</span>
-            <strong>R$ 0,00</strong>
+            <strong id="ninetieth-value">R$ 0,00</strong>
           </li>
         </ul>
       </div>
